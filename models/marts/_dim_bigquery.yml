@@ -1,3 +1,5 @@
+version: 2
+
 models:
   - name: dim_bigquery
     description: Bigquery jobs and processing
@@ -23,7 +25,6 @@ models:
                 values: ["SELECT", "INSERT", "UPDATE", "DELETE", "SCRIPT"]
       - name: total_bytes_processed
         description: Total bytes processed by the job.
-
       - name: creation_time
         description: Creation time of this job.
       - name: query
