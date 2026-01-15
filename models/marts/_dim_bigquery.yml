@@ -1,0 +1,32 @@
+models:
+  - name: dim_bigquery
+    description: Bigquery jobs and processing
+    columns:
+      - name: job_id
+        description: The ID of the job
+        tests:
+          - not_null
+          - unique
+      - name: user_email
+        description:  Email address or service account of the user who ran the job.
+        tests:
+          - not_null
+      - name: project_id
+        description: The ID of the project.
+        tests:
+          - not_null
+      - name: statement_type
+        description: The type of query statement. For example, DELETE, INSERT, SCRIPT, SELECT, or UPDATE.
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["SELECT", "INSERT", "UPDATE", "DELETE", "SCRIPT"]
+      - name: total_bytes_processed
+        description: Total bytes processed by the job.
+
+      - name: creation_time
+        description: Creation time of this job.
+      - name: query
+        description: SQL query text.
+      
+
