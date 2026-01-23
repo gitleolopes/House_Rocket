@@ -11,4 +11,4 @@ SELECT
     ,query
     ,total_bytes_processed
 FROM bq
-WHERE statement_type IS NULL OR statement_type != 'SCRIPT'
+WHERE statement_type IS NULL OR statement_type != 'SCRIPT' 
