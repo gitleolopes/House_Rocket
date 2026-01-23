@@ -3,8 +3,14 @@
 ## 📌 Project Overview
 This project demonstrates a data pipeline focused on Data Cost Observability using Google Cloud Platform (GCP) and analytics engineering best practices.
 
-The main goal is to simulate a scenario where raw data is ingested, transformed, documented, tested and visualized through an dashboard to support cost monitoring.
+The main goal is to simulate a scenario where raw data is ingested, transformed, documented, tested, and visualized through a dashboard to support cost monitoring.
 
+## 📊 Live Dashboard (Tableau Public)
+Explore the Cost Observability Dashboard:
+
+🔗 https://public.tableau.com/app/profile/leonardo.lopes.da.costa/viz/BigQueryCosts/General
+
+This dashboard provides visibility into BigQuery processing costs, key cost drivers, and user-level cost distribution.
 
 ## 🏗️ Architecture Overview
 Data Flow:
@@ -33,6 +39,8 @@ The transformation layer was built using DBT:
 - Total cost and processing over time
 - Cost and processing distribution per project
 - Highlight of users responsible for more than 10% of project cost
+<img width="1362" height="612" alt="image" src="https://github.com/user-attachments/assets/b39c3544-91cb-4c7e-86be-3be2d48d3587" />
+
 
 ## 🎯 Key Skills Demonstrated
 - Cloud data ingestion and storage
