@@ -1,0 +1,14 @@
+version: 2
+
+exposures:
+  - name: BigQuery Costs
+    type: dashboard
+    url: https://public.tableau.com/app/profile/leonardo.lopes.da.costa/viz/BigQueryCosts/General
+    description: This dashboard provides visibility into BigQuery processing costs, key cost drivers, and user-level cost distribution.
+
+    depends_on:
+      - ref('dim_bigquery')
+    owner: 
+      name: Leonardo Costa
+      email: leolopes671@gmail.com
+      
