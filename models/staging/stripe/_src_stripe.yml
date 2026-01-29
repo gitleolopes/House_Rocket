@@ -5,6 +5,26 @@ sources:
     database: dbt-tutorial
     tables:
       - name: payment
+        description: Raw payments data.
+        columns:
+          - name: id
+            description: Primary key for payments data
+            data_tests:
+              - unique
+              - not_null
+          - name: orderid
+            description: Identifier of the order associated with the payment
+          - name: paymentmethod
+            description: Payment method used for the transaction
+          - name: status
+            description: Status of the payment transaction (e.g. success, fail)
+          - name: amount
+            description: Monetary amount of the payment attempt
+          - name: created
+            description: Timestamp when the payment was created
+          - name: _batched_at
+            description: Timestamp indicating when the record was ingested or processed in a batch load into the data warehouse
+
         config:
           freshness:
             warn_after:
