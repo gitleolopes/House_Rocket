@@ -39,6 +39,8 @@ models:
                 - placed
                 - return_pending
                 - returned
+
+                
   - name: stg_stripe__payment
     description: One payment per row
     columns:
