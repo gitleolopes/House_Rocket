@@ -6,9 +6,8 @@ SELECT
     job_id
     ,user_email
     ,project_id
-    ,creation_time
-    ,statement_type
+    ,CAST(creation_time AS DATE) AS creation_date
     ,query
-    ,total_bytes_processed
+    ,(total_bytes_processed*100)/POWER(1024,4) AS total_tbytes_processed
 FROM bq
 WHERE statement_type IS NULL OR statement_type != 'SCRIPT' 
