@@ -1,4 +1,4 @@
-# 🛒 E-Commerce (Jaffle Shop)
+# 🛒 Jaffle Shop
 
 ## 📌 Project Overview
 
@@ -6,9 +6,9 @@ The goal of this project is to transform raw transactional data (customers, orde
 
 ## 📊 Live Dashboard (Tableau Public)
 
-Explore the E-Commerce Analytics Dashboard:
+Explore the Jaffle Shop Analytics Dashboard:
 
-🔗 https://public.tableau.com/app/profile/leonardo.lopes.da.costa/viz/E-Commerce_17702316742080/General
+🔗 https://public.tableau.com/app/profile/leonardo.lopes.da.costa/viz/JaffleShop_17702365428990/General
 
 This dashboard provides insights into revenue and order performance over time and by customer.
 
