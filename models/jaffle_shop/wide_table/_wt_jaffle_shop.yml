@@ -1,0 +1,22 @@
+models:
+  - name: bi_orders_customers
+    description: Wide table for BI consumption
+    columns:
+      - name: order_id
+        description: Primary key for the orders table
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Identifier of the customer who placed the order
+      - name: order_date
+        description: Date when the order was created
+      - name: order_status
+        description: "{{ doc('order_status') }}"
+      - name: is_paid
+        description: Boolean flag indicating whether the order has at least one successful payment
+      - name: paid_amount
+        description: Total monetary amount successfully paid for the order
+      - name: full_name
+        description: Customer full name (first name + last name)
+        

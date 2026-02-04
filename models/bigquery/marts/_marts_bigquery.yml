@@ -1,6 +1,8 @@
+version: 2
+
 models:
-  - name: dim_bigquery
-    description: Bigquery jobs and processing
+  - name: fct_bigquery
+    description: Bigquery jobs and processing. SCRIPT statements are excluded because they do not represent direct cost drivers.
     columns:
       - name: job_id
         description: The ID of the job
@@ -15,17 +17,10 @@ models:
         description: The ID of the project.
         tests:
           - not_null
-      - name: statement_type
-        description: The type of query statement. For example, DELETE, INSERT, SCRIPT, SELECT, or UPDATE.
-        tests:
-          - accepted_values:
-              arguments:
-                values: ["SELECT", "INSERT", "UPDATE", "DELETE", "SCRIPT"]
       - name: total_bytes_processed
         description: Total bytes processed by the job.
-
       - name: creation_time
-        description: Creation time of this job.
+        description: Creation date of this job.
       - name: query
         description: SQL query text.
       

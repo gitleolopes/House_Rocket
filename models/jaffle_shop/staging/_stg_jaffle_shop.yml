@@ -1,0 +1,60 @@
+models:
+  - name: stg_jaffle_shop__customers
+    description: One customer per row
+    columns:
+      - name: customer_id
+        description: Primary key for the customers table
+        data_tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: Customer first name
+      - name: last_name
+        description: Customer last name
+
+
+  - name: stg_jaffle_shop__orders
+    description: One order per row
+    columns:
+      - name: order_id
+        description: Primary key for the orders table
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Identifier of the customer who placed the order
+        data_tests:
+          - relationships:
+              field: customer_id
+              to: ref('stg_jaffle_shop__customers')
+      - name: order_date
+        description: Date when the order was created
+      - name: order_status
+        description: "{{ doc('order_status') }}"
+        data_tests:
+          - accepted_values:
+              values:
+                - completed
+                - shipped
+                - placed
+                - return_pending
+                - returned
+
+                
+  - name: stg_stripe__payment
+    description: One payment per row
+    columns:
+      - name: payment_id
+        description: Primary key for payments data
+      - name: order_id
+        description: Identifier of the order associated with the payment
+      - name: payment_method
+        description: Payment method used for the transaction
+      - name: payment_status
+        description: Status of the payment transaction (e.g. success, fail)
+      - name: amount
+        description: Monetary amount of the payment attempt
+      - name: created_at
+        description: Timestamp when the payment was created
+      - name: _batched_at
+        description: Timestamp indicating when the record was ingested or processed in a batch load into the data warehouse
