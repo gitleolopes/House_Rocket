@@ -17,9 +17,9 @@ models:
         description: The ID of the project.
         tests:
           - not_null
-      - name: total_tbytes_processed
-        description: Total tbytes processed by the job.
-      - name: creation_date
+      - name: total_bytes_processed
+        description: Total bytes processed by the job.
+      - name: creation_time
         description: Creation date of this job.
       - name: query
         description: SQL query text.
