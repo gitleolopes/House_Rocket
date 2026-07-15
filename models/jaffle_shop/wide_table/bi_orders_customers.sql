@@ -14,6 +14,7 @@ SELECT
     ,o.paid_amount
     ,o.customer_id
     ,c.full_name
+    ,c.customer_segment
 FROM orders o
 LEFT JOIN customers c
 ON o.customer_id = c.customer_id

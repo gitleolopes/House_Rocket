@@ -1,2 +1,2 @@
-SELECT * FROM {{ ref('dim_bigquery') }}
+SELECT * FROM {{ ref('fct_bigquery') }}
 WHERE total_bytes_processed < 1

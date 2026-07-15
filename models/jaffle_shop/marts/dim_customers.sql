@@ -1,5 +1,5 @@
 WITH customers AS (
-    SELECT * FROM {{ref('int_customers')}}
+    SELECT * FROM {{ref('int_customers_segments')}}
 )
 
 SELECT
@@ -11,4 +11,5 @@ SELECT
     ,last_order_date
     ,has_orders
     ,total_orders
+    ,customer_segment
 FROM customers
