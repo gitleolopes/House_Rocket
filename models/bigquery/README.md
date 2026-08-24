@@ -1,6 +1,6 @@
 ## 📊 Data Cost Observability (GCP)
 
-### 📌 Project Overview
+#### 📌 Project Overview
 This project demonstrates a data pipeline focused on Data Cost Observability using Google Cloud Platform (GCP) and analytics engineering best practices.
 
 The main goal is to simulate a scenario where raw data is ingested, transformed, documented, tested, and visualized through a dashboard to support cost monitoring.
