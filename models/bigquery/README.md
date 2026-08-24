@@ -43,7 +43,7 @@ The transformation layer was built using DBT:
 
 
 #### 🎯 Key Skills Demonstrated
-- Cloud data ingestion and storage
+- Cloud data warehousing and analytics
 - Analytics engineering with dbt
 - Data quality testing and documentation
 - Cost observability concepts
