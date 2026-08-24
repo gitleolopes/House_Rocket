@@ -16,23 +16,23 @@ This dashboard provides visibility into BigQuery processing costs, key cost driv
 Data Flow:
 1. Mock data generation using Python
 2. Raw data ingestion into BigQuery
-3. Data Transformation and Modeling using DBT
-4. Data Quality Tests and Documentation with DBT
+3. Data Transformation and Modeling using dbt
+4. Data Quality Tests and Documentation with dbt
 5. Refined data ingestion into BigQuery
 6. Cost Dashboard built in Tableau
 
 #### 🧰 Tech Stack
 - Data Warehouse: BigQuery
-- Transformation Tool: DBT
+- Transformation Tool: dbt
 - Data Visualization: Tableau
 - Version Control: GitHub
 
 #### 🧪 Data Modeling & Quality
-The transformation layer was built using DBT:
+The transformation layer was built using dbt:
 - Staging model to standardize raw data
 - Mart models to optimize data for analytics and reporting
 - Generic tests: unique, not null and acceptable values
-- Documentation using DBT docs
+- Documentation using dbt docs
 
 #### 📊 Dashboard Highlights
 - KPIs (Jobs, TBytes, Price, Users, Projects)
