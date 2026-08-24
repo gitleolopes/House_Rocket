@@ -1,4 +1,4 @@
-### 📊 Data Cost Observability (GCP)
+### 📊 BigQuery Cost Observability
 
 #### 📌 Project Overview
 This project demonstrates a data pipeline focused on Data Cost Observability using Google Cloud Platform (GCP) and analytics engineering best practices.
