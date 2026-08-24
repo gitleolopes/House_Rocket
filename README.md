@@ -1,4 +1,4 @@
-##🏠 dbt Projects
+## 🏠 dbt Projects
 A collection of analytics engineering projects built with dbt and SQL, covering data transformation, modeling, testing, and documentation.
 
 ### 📂 Structure 
