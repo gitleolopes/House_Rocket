@@ -1,7 +1,7 @@
-## 🏠 DBT Projects
+##🏠 dbt Projects
+A collection of analytics engineering projects built with dbt and SQL, covering data transformation, modeling, testing, and documentation.
 
-This repository contains dbt models organized by project.
+### 📂 Structure 
+**[📊 BigQuery Cost Observability](https://github.com/gitleolopes/dbt_projects/tree/gitleolopes-patch-2/models/bigquery) → BigQuery costs, billing, and usage analytics**
 
-### 📂 Structure
-- **[`models/bigquery`](https://github.com/gitleolopes/dbt_projects/tree/gitleolopes-patch-2/models/bigquery) → BigQuery costs, billing, and usage analytics**
-- **[`models/jaffle_shop`](https://github.com/gitleolopes/dbt_projects/tree/gitleolopes-patch-2/models/jaffle_shop) → Transactional data from the Jaffle Shop**
+**[🛒 Jaffle Shop](https://github.com/gitleolopes/dbt_projects/tree/gitleolopes-patch-2/models/jaffle_shop) → Transactional data from the Jaffle Shop**
