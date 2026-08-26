@@ -19,7 +19,6 @@ WITH bq AS(
 SELECT
     job_id
     ,user_email
-    ,{{anonymize("user_email")}} as anonymized_email
     ,project_id
     ,CAST(creation_time AS DATE) AS creation_date
     ,query
