@@ -53,7 +53,7 @@ models:
       - name: payment_status
         description: Status of the payment transaction (e.g. success, fail)
       - name: amount
-        description: Monetary amount of the payment attempt
+        description: Monetary amount in cents of the payment attempt 
       - name: created_at
         description: Timestamp when the payment was created
       - name: _batched_at

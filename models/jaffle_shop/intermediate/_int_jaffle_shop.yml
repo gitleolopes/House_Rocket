@@ -16,7 +16,7 @@ models:
       - name: is_paid
         description: Boolean flag indicating whether the order has at least one successful payment
       - name: paid_amount
-        description: Total monetary amount successfully paid for the order
+        description: Total monetary amount in dollars successfully paid for the order
 
   - name: int_customers
     description: Customer-level aggregated metrics

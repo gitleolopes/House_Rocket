@@ -10,6 +10,8 @@
 
 {{cool_string}} I want to write Jinja for {{my_fav_num}} years!
 #}
+
+{#
 {% set animals = ["Dog", "Cat", "Bird"] %}
 
 {{ animals[0] }}
@@ -19,4 +21,18 @@
 {% for animal in animals %} 
 my favorite animal is the {{ animal }} 
 {% endfor %}
+#}
 
+{%- set foods = ['banana', 'strowberry', 'chicken nugget', 'passion fruit'] -%}
+
+{%- for food  in foods -%}
+    {%- if food == 'chicken nugget' -%}
+        {%- set food_type = 'snack' -%}
+    
+    {%-else-%}
+        {%- set food_type = 'fruit' -%}
+
+    {%- endif -%}
+
+    The delicious {{food}} is my favorite {{food_type}}
+{% endfor %}
