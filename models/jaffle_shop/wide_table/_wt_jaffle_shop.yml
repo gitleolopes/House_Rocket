@@ -19,4 +19,6 @@ models:
         description: Total monetary amount successfully paid for the order
       - name: full_name
         description: Customer full name (first name + last name)
+      - name: customer_segment
+        description: Customer segment based on avg revenue and avg orders 
         

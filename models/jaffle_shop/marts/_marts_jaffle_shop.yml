@@ -38,3 +38,5 @@ models:
         description: Date of the customer’s first order. Null if no orders exist.
       - name: last_order_date
         description: Date of the customer’s most recent order. Null if no orders exist.
+      - name: customer_segment
+        description: Customer segment based on avg revenue and avg orders 

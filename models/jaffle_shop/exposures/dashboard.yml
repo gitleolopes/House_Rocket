@@ -1,0 +1,14 @@
+version: 2
+
+exposures:
+  - name: Jaffle Shop
+    type: dashboard
+    url: https://public.tableau.com/app/profile/tableauleolopes/viz/JaffleShop_17702365428990/General
+    description: This dashboard provides insights into revenue and order performance over time and by customer.
+
+    depends_on:
+      - ref('bi_orders_customers')
+    owner: 
+      name: Leonardo Costa
+      email: leolopes671@gmail.com
+      

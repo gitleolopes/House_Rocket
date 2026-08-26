@@ -19,8 +19,10 @@ models:
           - not_null
       - name: total_bytes_processed
         description: Total bytes processed by the job.
-      - name: creation_time
+      - name: creation_date
         description: Creation date of this job.
+        tests:
+          - not_null
       - name: query
         description: SQL query text.
       

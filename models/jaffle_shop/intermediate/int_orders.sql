@@ -12,7 +12,8 @@ SELECT
     ,o.order_date
     ,o.order_status
     ,LOGICAL_OR(p.payment_status = 'success') AS is_paid
-    ,SUM(CASE WHEN p.payment_status = 'success' THEN p.amount ELSE 0 END) AS paid_amount
+    -- amount is stored in cents, converted it to dollars
+    ,SUM(CASE WHEN p.payment_status = 'success' THEN {{cent_to_dollar("p.amount")}} ELSE 0 END) AS paid_amount
 FROM orders o
 LEFT JOIN payment p
 ON o.order_id = p.order_id
