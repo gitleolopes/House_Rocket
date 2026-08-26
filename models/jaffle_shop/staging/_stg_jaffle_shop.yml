@@ -46,15 +46,27 @@ models:
     columns:
       - name: payment_id
         description: Primary key for payments data
+        tests:
+          - not_null
+          - unique
       - name: order_id
         description: Identifier of the order associated with the payment
+        tests:
+          - not_null
       - name: payment_method
         description: Payment method used for the transaction
       - name: payment_status
         description: Status of the payment transaction (e.g. success, fail)
+        tests:
+          - accepted_values:
+              values: ['success', 'fail']
       - name: amount
         description: Monetary amount in cents of the payment attempt 
+        tests:
+          - not_null
       - name: created_at
         description: Timestamp when the payment was created
+        tests:
+          - not_null
       - name: _batched_at
         description: Timestamp indicating when the record was ingested or processed in a batch load into the data warehouse
