@@ -23,5 +23,6 @@ SELECT
     ,CAST(creation_time AS DATE) AS creation_date
     ,query
     ,total_bytes_processed
+    ,statement_type
 FROM bq
 WHERE statement_type IS NULL OR statement_type != 'SCRIPT' 
